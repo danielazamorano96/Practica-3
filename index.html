@@ -7,6 +7,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="stylesheet.css">
+    
 </head>
 <body>
     <header>
@@ -17,20 +18,20 @@
         
         <form action="" id="survey-form">
             <div>
-                <label id="name-label"> 
+                <label for="name" id="name-label"> 
                     <input type="text" placeholder="Name" id="name" required>
                 </label>
-                <label id="email-label">
-                    <input type="text" placeholder="Email" id="email" required>
+                <label for="email" id="email-label">
+                    <input type="email" placeholder="Email" id="email" required>
                 </label>
-                <label id="number-label">
+                <label for="number" id="number-label">
                     <input type="number" placeholder="Age" id="number" min="18" max="99">
                 </label>
             </div>
             <div>
                 <label> Género
-                    <select name="genero" id="genero">
-                        <option value="femenino" id="dropdown">Femenino</option>
+                    <select name="genero" id="genero" id="dropdown">
+                        <option value="femenino">Femenino</option>
                         <option value="masculino">Masculino</option>
                     </select>
                 </label>
@@ -59,9 +60,10 @@
                 <p><strong>Additional comments...</strong></p>
                 <textarea name="textarea" id="textarea" cols="30" rows="10" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Write your comments here</textarea>
             </div>
-            <button type="submit">Send!</button>
+            <button type="submit" id="submit">Send!</button>
         </form>
             
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
