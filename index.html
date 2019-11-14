@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Complete the form to suscribe to our corgi club!</h1>
+    </header>
+    <main>
+        <p id="description">Welcome to our club! We need some contact information so we can get in touch</p>
+        
+        <form action="" id="survey-form">
+            <div>
+                <label id="name-label"> 
+                    <input type="text" placeholder="Name" id="name" required>
+                </label>
+                <label id="email-label">
+                    <input type="text" placeholder="Email" id="email" required>
+                </label>
+                <label id="number-label">
+                    <input type="number" placeholder="Age" id="number" min="18" max="99">
+                </label>
+            </div>
+            <div>
+                <label> Género
+                    <select name="genero" id="genero">
+                        <option value="femenino" id="dropdown">Femenino</option>
+                        <option value="masculino">Masculino</option>
+                    </select>
+                </label>
+            </div> 
+            <div> 
+                <p>Do you want to receive more info?</p>   
+                <label> 
+                    <input type="radio" name="more-info" value="yes"> 
+                        Yes
+                    <input type="radio" name="more-info" value="no"> 
+                        No
+                </label>
+            </div>
+            <div>     
+                <p>Select one or more options to follow us</p>
+                <label> 
+                    <input type="checkbox" name="social-media" value="twitter"> 
+                            Instagram
+                    <input type="checkbox" name="social-media" value="instagram"> 
+                            Twitter
+                    <input type="checkbox" name="social-media" value="Facebook"> 
+                            Facebook
+                </label>
+            </div>    
+            <div>
+                <p><strong>Additional comments...</strong></p>
+                <textarea name="textarea" id="textarea" cols="30" rows="10" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Write your comments here</textarea>
+            </div>
+            <button type="submit">Send!</button>
+        </form>
+            
+    </main>
+</body>
+</html>
